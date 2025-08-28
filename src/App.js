@@ -1,27 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import FlashcardList from './components/FlashcardList';
 import AddFlashcard from './components/AddFlashcard';
 import './App.css';
 
 function App() {
-  // Загружаем из localStorage или задаем начальные карточки
-  const [flashcards, setFlashcards] = useState(() => {
-    const saved = localStorage.getItem('flashcards');
-    if (saved) {
-      return JSON.parse(saved);
-    } else {
-      return [
-       // { id: 1, question: 'What is React?', answer: 'JavaScript библиотека для построения интерфейсов' },
-       // { id: 2, question: 'What are components???', answer: 'Повторно используемые части интерфейса' },
-        // добавьте начальные карточки по желанию
-      ];
-    }
-  });
-
-  // Обновляем localStorage при изменении массива карточек
-  useEffect(() => {
-    localStorage.setItem('flashcards', JSON.stringify(flashcards));
-  }, [flashcards]);
+  const [flashcards, setFlashcards] = useState([
+    { id: 1, question: 'Что такое React?', answer: 'JavaScript библиотека для построения интерфейсов' },
+    { id: 2, question: 'What are components???', answer: 'Повторно используемые части интерфейса' },
+    { id: 2, question: 'Apple?', answer: 'яблоко' },
+    { id: 2, question: 'Apricot?', answer: 'абрикос'},
+    { id: 2, question: 'Pineapple?', answer: 'ананас'},
+   { id: 2, question: 'Banana?', answer: 'банан'},
+   
+    // добавьте начальные карточки по желанию
+  ]);
 
   const addFlashcard = (question, answer) => {
     const newCard = {
@@ -46,3 +38,4 @@ function App() {
 }
 
 export default App;
+  
