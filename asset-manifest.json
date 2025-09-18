@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Elena559/Flashcard/static/css/main.1e8d3592.css",
-    "main.js": "/Elena559/Flashcard/static/js/main.0af123a1.js",
-    "index.html": "/Elena559/Flashcard/index.html",
-    "main.1e8d3592.css.map": "/Elena559/Flashcard/static/css/main.1e8d3592.css.map",
-    "main.0af123a1.js.map": "/Elena559/Flashcard/static/js/main.0af123a1.js.map"
+    "main.css": "/Flashcard/static/css/main.1e8d3592.css",
+    "main.js": "/Flashcard/static/js/main.0af123a1.js",
+    "index.html": "/Flashcard/index.html",
+    "main.1e8d3592.css.map": "/Flashcard/static/css/main.1e8d3592.css.map",
+    "main.0af123a1.js.map": "/Flashcard/static/js/main.0af123a1.js.map"
   },
   "entrypoints": [
     "static/css/main.1e8d3592.css",
